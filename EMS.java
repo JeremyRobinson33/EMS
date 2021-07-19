@@ -33,8 +33,6 @@ public class EMS {
             bufferedReader = new BufferedReader(fileReader);
 
             if (file.length() == 0) {
-                System.out.println("inside if");
-
                 file = new File(path + "/employees.txt");
                 fileReader = new FileReader(file);
                 bufferedReader = new BufferedReader(fileReader);
@@ -236,7 +234,6 @@ public class EMS {
                 bw.write(oneLine.toString());
                 bw.newLine();
             }
-            bw.flush();
             bw.close();
         }
         catch (UnsupportedEncodingException y) { y.printStackTrace();}
@@ -261,7 +258,6 @@ public class EMS {
                 bw.write(oneLine.toString());
                 bw.newLine();
             }
-            bw.flush();
             bw.close();
         }
         catch (UnsupportedEncodingException y) { y.printStackTrace();}
